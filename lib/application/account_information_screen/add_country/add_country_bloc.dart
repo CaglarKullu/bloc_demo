@@ -6,12 +6,25 @@ import '../../../domain/account_information_screen/value_objects.dart';
 
 part 'add_country_event.dart';
 part 'add_country_state.dart';
-part 'add_country_bloc.freezed.dart';
+
 
 class AddCountryBloc extends Bloc<AddCountryEvent, AddCountryState> {
   AddCountryBloc() : super(const _Initial()) {
     on<AddCountryEvent>((event, emit) {
-      // TODO: implement event handler
+           (event, emit) async {
+        await event.when(
+          submitted: (event) async {
+            emit(const AddCountryState.submitting());
+
+            final unitOrFailure =
+                await _contactFormApi.sendContactFormContents(event);
+
+            if (unitOrFailure.isRight()) {
+              emit(const AddCountryState.submissionSuccessful());
+            } else {
+              emit(const AddCountryState.submissionFailed('Submission failed'));
+            }
+          },
     });
   }
 }
