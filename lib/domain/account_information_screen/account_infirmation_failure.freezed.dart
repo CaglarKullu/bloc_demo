@@ -19,32 +19,38 @@ mixin _$AccountInformationScreenFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() countryUpdateFailed,
+    required TResult Function() unexpectedError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? countryUpdateFailed,
+    TResult? Function()? unexpectedError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? countryUpdateFailed,
+    TResult Function()? unexpectedError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(CountryUpdateFailed value) countryUpdateFailed,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(CountryUpdateFailed value)? countryUpdateFailed,
+    TResult? Function(UnexpectedError value)? unexpectedError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(CountryUpdateFailed value)? countryUpdateFailed,
+    TResult Function(UnexpectedError value)? unexpectedError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -110,6 +116,7 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() countryUpdateFailed,
+    required TResult Function() unexpectedError,
   }) {
     return countryUpdateFailed();
   }
@@ -118,6 +125,7 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? countryUpdateFailed,
+    TResult? Function()? unexpectedError,
   }) {
     return countryUpdateFailed?.call();
   }
@@ -126,6 +134,7 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? countryUpdateFailed,
+    TResult Function()? unexpectedError,
     required TResult orElse(),
   }) {
     if (countryUpdateFailed != null) {
@@ -138,6 +147,7 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(CountryUpdateFailed value) countryUpdateFailed,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
     return countryUpdateFailed(this);
   }
@@ -146,6 +156,7 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(CountryUpdateFailed value)? countryUpdateFailed,
+    TResult? Function(UnexpectedError value)? unexpectedError,
   }) {
     return countryUpdateFailed?.call(this);
   }
@@ -154,6 +165,7 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(CountryUpdateFailed value)? countryUpdateFailed,
+    TResult Function(UnexpectedError value)? unexpectedError,
     required TResult orElse(),
   }) {
     if (countryUpdateFailed != null) {
@@ -165,4 +177,106 @@ class _$CountryUpdateFailed implements CountryUpdateFailed {
 
 abstract class CountryUpdateFailed implements AccountInformationScreenFailure {
   const factory CountryUpdateFailed() = _$CountryUpdateFailed;
+}
+
+/// @nodoc
+abstract class _$$UnexpectedErrorCopyWith<$Res> {
+  factory _$$UnexpectedErrorCopyWith(
+          _$UnexpectedError value, $Res Function(_$UnexpectedError) then) =
+      __$$UnexpectedErrorCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UnexpectedErrorCopyWithImpl<$Res>
+    extends _$AccountInformationScreenFailureCopyWithImpl<$Res,
+        _$UnexpectedError> implements _$$UnexpectedErrorCopyWith<$Res> {
+  __$$UnexpectedErrorCopyWithImpl(
+      _$UnexpectedError _value, $Res Function(_$UnexpectedError) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UnexpectedError implements UnexpectedError {
+  const _$UnexpectedError();
+
+  @override
+  String toString() {
+    return 'AccountInformationScreenFailure.unexpectedError()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UnexpectedError);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() countryUpdateFailed,
+    required TResult Function() unexpectedError,
+  }) {
+    return unexpectedError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? countryUpdateFailed,
+    TResult? Function()? unexpectedError,
+  }) {
+    return unexpectedError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? countryUpdateFailed,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
+    if (unexpectedError != null) {
+      return unexpectedError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(CountryUpdateFailed value) countryUpdateFailed,
+    required TResult Function(UnexpectedError value) unexpectedError,
+  }) {
+    return unexpectedError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(CountryUpdateFailed value)? countryUpdateFailed,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+  }) {
+    return unexpectedError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(CountryUpdateFailed value)? countryUpdateFailed,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
+    if (unexpectedError != null) {
+      return unexpectedError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UnexpectedError implements AccountInformationScreenFailure {
+  const factory UnexpectedError() = _$UnexpectedError;
 }

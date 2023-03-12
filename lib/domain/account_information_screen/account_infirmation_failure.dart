@@ -7,4 +7,7 @@ abstract class AccountInformationScreenFailure
     with _$AccountInformationScreenFailure {
   const factory AccountInformationScreenFailure.countryUpdateFailed() =
       CountryUpdateFailed;
+
+  const factory AccountInformationScreenFailure.unexpectedError() =
+      UnexpectedError;
 }
